@@ -23,7 +23,7 @@ Light text/background colour: #E7E9FC */
 body { 
     color: var(--Main);
     font-family: Roboto;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -63,22 +63,28 @@ body {
  }
 
  .title {
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 56px;
     line-height: 60px;
-    color: var(--Dark-colour)
+    color: var(--Dark-colour);
+    letter-spacing: 0.02em;
 }
 
 .secondtitle {
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 36px;
-    color: var(--Dark-colour)
+    color: var(--Dark-colour);
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 .thirdtitle {
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 20px;
     color: var(--Dark-colour);
+    line-height: 24px;
+    letter-spacing: 0.02em;
 }
 
 .list {
@@ -87,10 +93,10 @@ body {
 
 /*Header*/
 /*Logo header*/
-.logo .logo-start {
+.logo-start {
     color: var(--Main-text-colour);
 }
-.logo .logo-finish {
+.logo-finish {
     color: var(--Primary-brand-colour);
 }
 /*Navigation*/
@@ -101,6 +107,7 @@ body {
     letter-spacing: 0.02em;
     font-style: normal;
     color: var(--Dark-colour);
+    text-decoration: none;
 }
 
 .nav .nav-title:hover,
@@ -110,6 +117,10 @@ body {
 
 .nav .nav-title:active {
     color: var(--Primary-brand-colour);
+}
+
+.list .nav-title {
+    text-decoration: none;
 }
 
 /*Contacts*/
