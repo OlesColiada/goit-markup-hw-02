@@ -1,0 +1,240 @@
+/*Main settings, root ets*/
+
+/*Colors
+Text colors:
+1) main text color (SLATE): #434455
+2) title colour (NAVY BLUE): #2E2F42
+3) footer small text (CORNFLOWER): #E7E9FC
+*/
+
+/*main section
+main brand color (IRIS): #4D5AE5
+main bg color: #E5E5E5
+bg color (CLOUD): #F4F4FD
+main white color (WHITE): #FFFFFF
+active button color: #404BBF;
+*/
+
+/*General settings*/
+:root {
+    --main-text-color:#434455;
+    --title-color:#2E2F42;
+    --footer-small-text-color:#E7E9FC;
+    --main-brand-color:#4D5AE5;
+    --main-bg-color: #E5E5E5;
+    --cloud-bg-color:#F4F4FD;
+    --main-white-color:#FFFFFF;
+    --active-btn-color: #404BBF;
+}
+
+body {
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    font-family: 'Roboto';
+    font-weight: 400; /*inserted main text settings*/
+    font-size: 16px;
+    line-height: 1,5;
+    letter-spacing: 0.02em;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+            /*Link settings*/    
+.link {
+        text-decoration: none;
+}
+
+            /*List setting*/
+.list {
+    list-style-type: none;
+}
+
+            /*Titles*/
+.maintitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-white-color);
+}
+
+.secondtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color)
+}
+
+.thirdtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+}
+
+            /*Button*/
+.firstbutton {
+    background-color: var(--main-brand-color);
+    color: var(--main-white-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.18;
+    width: 170px;
+    height: 51px;
+    border: none;
+}
+
+.firstbutton:hover,
+.firstbutton:focus {
+    background: var(--main-brand-color);
+} /*Тут мають бути в результаті додані тіні*/
+
+.firstbutton:active {
+    background: var(--active-btn-color);
+}
+
+.secondbutton {
+    background-color: var(--cloud-bg-color);
+    color: var(--main-brand-color);
+    border: var(--footer-small-text-color);
+    border-width: 1px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    height: 48px;
+    padding: 12px 24px;
+}
+
+
+.secondbutton:hover
+.secondbutton:focus{
+ background: var(--active-btn-color);
+ }
+
+.secondbutton:active {
+    background: var(--active-btn-color);
+    color: var(--main-white-color);
+}
+
+
+            /*Process*/
+
+            /*Header*/
+.logo-start {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: var(--main-brand-color);
+
+    
+
+
+}
+
+.logo-finish {
+    color: var(--title-color);
+}
+
+            /*Navigation*/
+.nav .nav-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+}
+
+.nav .link:hover,
+.nav .link:focus {
+    color: var(--main-text-color);
+}
+
+.nav .link:active {
+    color: var(--main-brand-color);
+}
+
+.nav .current-page {
+    text-decoration: underline;
+}
+
+            /*Contacts*/    
+.contacts .contact {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)
+}
+
+.contacts .contact:hover,
+.contacts .contact:focus {
+    color: var(--main-brand-color);
+}
+
+
+            /*Hero section*/
+
+div.hero {
+    background-color: var(--title-color);
+    width: 1440px;
+    height: 603px;
+}
+
+            /*Features section*/
+.features-section {
+    columns: 4;
+}
+
+            /*Team section*/
+div.team {
+    background-color: var(--cloud-bg-color);
+    width: 1440px;
+    height: 732px;
+}
+.team-section {
+    columns: 2;
+    column-gap: 24px;
+      
+}
+
+            /*Footer section*/
+div.footer {
+    background-color: var(--title-color);
+    width: 1440px;
+    height: 310px;
+}
+
+.footer .logo-finish {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--cloud-bg-color);
+} 
+
+.footer .footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-small-text-color);
+}
