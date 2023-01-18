@@ -29,14 +29,10 @@ active button color: #404BBF;
 
 body {
     color: var(--main-text-color);
-    background-color: var(--main-bg-color);
+    background-color: var(--main-white-color);
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400; /*inserted main text settings*/
     font-size: 16px;
-    line-height: 1,5;
     letter-spacing: 0.02em;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -71,9 +67,9 @@ body {
 }
 
 .thirdtitle {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-color);
 }
@@ -85,8 +81,6 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.18;
-    width: 170px;
-    height: 51px;
     border: none;
     cursor: pointer;
 }
@@ -115,13 +109,8 @@ body {
     cursor: pointer;
 }
 
-
-.secondbutton:hover
-.secondbutton:focus{
- background: var(--active-btn-color);
- }
-
-.secondbutton:active {
+.secondbutton:hover,
+.secondbutton.focus {
     background: var(--active-btn-color);
     color: var(--main-white-color);
 }
@@ -131,7 +120,7 @@ body {
 
             /*Header*/
 .logo-start {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -169,6 +158,7 @@ body {
 }
 
 .nav .current-page {
+    color: var(--active-btn-color);
     text-decoration: underline;
 }
 
@@ -190,7 +180,7 @@ body {
 
 div.hero {
     background-color: var(--title-color);
-    width: 1440px;
+    width: 100%;
     height: 603px;
 }
 
