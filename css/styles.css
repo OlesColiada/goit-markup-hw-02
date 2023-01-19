@@ -48,7 +48,7 @@ body {
 
             /*Titles*/
 .maintitle {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -57,7 +57,7 @@ body {
 }
 
 .secondtitle {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -69,7 +69,7 @@ body {
 .thirdtitle {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: calc(24/20);
     letter-spacing: 0.02em;
     color: var(--title-color);
 }
@@ -78,9 +78,10 @@ body {
 .firstbutton {
     background-color: var(--main-brand-color);
     color: var(--main-white-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;
+    line-height: calc(24/16);
+    letter-spacing: 0.04em;
     border: none;
     cursor: pointer;
 }
@@ -110,7 +111,7 @@ body {
 }
 
 .secondbutton:hover,
-.secondbutton.focus {
+.secondbutton:focus {
     background: var(--active-btn-color);
     color: var(--main-white-color);
 }
@@ -159,7 +160,6 @@ body {
 
 .nav .current-page {
     color: var(--active-btn-color);
-    text-decoration: underline;
 }
 
             /*Contacts*/    
@@ -223,4 +223,11 @@ div.footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-small-text-color);
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
 }
